@@ -1028,9 +1028,10 @@ for (var i=0; i<ourInput.length; i++) {
     sides[1] = 2*w*h;
     sides[2] = 2*h*l;
     console.log(sides);
-    surfaceArea += sides[0] + sides[1] + sides[2] + Math.max(sides[0],sides[1],sides[2]);
-    console.log(surfaceArea);
+    surfaceArea += sides[0] + sides[1] + sides[2] + Math.min(...sides)/2;
+    console.log(Math.min(...sides)/2);
 }
+console.log(surfaceArea);
 
 //while (ourInput.length > 0) {
 
