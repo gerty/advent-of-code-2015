@@ -30,7 +30,7 @@ console.log(day3input);
 // Start case
 map[eastLocation+westBorder][northLocation+westBorder]++;
 
-while (day3input.length>0) {
+while (day3input.length>0) { // while loop takes two moves at a time - could throw an error
     direction = day3input.substr(0,1);
     switch (direction) {
         case '^' : // north
